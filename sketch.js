@@ -14,7 +14,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   //per lo shake
   angleMode(DEGREES);
-  setShakeThreshold(1);
+  setShakeThreshold(7);
   frameRate();
 
   // textSize(250);
@@ -56,7 +56,7 @@ function draw() {
     v= vehicles[j];
     v.update();
     v.show();
-    if (value > 3 ){
+    if (value > 3){
     v.vel = p5.Vector.random2D();
     }
 
